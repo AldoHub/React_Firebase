@@ -125,7 +125,8 @@ class NoteForm extends Component {
   }
 
   render() {
-      return (
+    const notesLength= this.state.notes.length;
+    return (
         <div>
             <form id="form" onSubmit={this.onSubmit.bind(this)} className="note-form">
                 <div className="form-input">
@@ -137,17 +138,26 @@ class NoteForm extends Component {
         
             <h3>My Notes:</h3>
             <div className="notes-data">
-            <p id="message">{this.state.message}</p>
-              {this.state.notes.map((note, i)=>{
-                return(
-                                
-                    <div className="note-item" key={note.id}>
-                    <span  onClick={this.removeNote} className="delete" id={note.id}>X</span>
-                    <Notes item={note}/>  
-                    </div>
-                 
-                )
-              })}
+
+            {
+
+              notesLength > 0 ? (
+
+                this.state.notes.map((note, i)=>{
+                  return(
+                                    
+                        <div className="note-item" key={note.id}>
+                        <span  onClick={this.removeNote} className="delete" id={note.id}>X</span>
+                        <Notes item={note}/>  
+                        </div>
+                    
+                    )
+                  })
+              ) : (
+                <p>If you have any notes, you should not be able to see this message for too long.</p>
+              )
+              
+            }
 
             </div>
 

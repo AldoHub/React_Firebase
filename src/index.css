@@ -1,27 +1,26 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Arvo";
   background: #F9F8EB;
   color: #33425B;
 }
 
 header {
-   padding: 12px;
-   border-bottom: 5px solid #87DFD6;
-   box-shadow: 0px 0px 20px #000;
-   margin-bottom: 30px;
+  border-bottom:1px solid #111;
+  padding: 20px 0; 
+  margin-bottom: 30px;
 
-  }
+}
 
 header h1 {
   padding: 0;
   margin: 0;
-  font-size: 18px;
+ 
   text-indent: 10px;
 }
 .container{
-width: 80%;
+width: 60%;
 margin: 0 auto;
 padding: 10px;
 
@@ -50,6 +49,7 @@ padding: 10px;
 
 .form-input input[type="text"] {
    width: 80%;
+   font-style: italic;
    text-indent: 10px;
    color: #33425B;
   
@@ -64,25 +64,27 @@ padding: 10px;
 .delete {
   background: #B53B3B;
   color: #eee;
-  padding: 4px 6px;
+  padding: 4px 10px;
   top:0;
   position: absolute;
   text-align: center;
   right: 0px;
+  display: none;
   cursor: pointer;
 }
 
-.delete:hover {
-  background: #E62525;
+.note-item:hover .delete {
+  display: block;
 }
 .note-item {
+  font-family: "Barlow Condensed";
   color: #111;
   background: #F9F8EB;
+  border-top:1px solid #666;
   position: relative;
-  box-shadow: 0px 1px 2px #111;
-  padding: 40px 12px 12px 12px;
+  padding: 12px 30px;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   animation: slideDown 0.600s ease-in-out;
 }
 @keyframes slideDown {

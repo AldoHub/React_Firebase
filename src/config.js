@@ -1,9 +1,9 @@
 // Initialize Firebase
 export const DB_CONFIG = {
-    apiKey: "YOUR_DATA",
-    authDomain: "YOUR_DATA",
-    databaseURL: "YOUR_DATA",
-    projectId: "YOUR_DATA",
-    storageBucket: "YOUR_DATA",
-    messagingSenderId: "YOUR_DATA"
+    apiKey: "AIzaSyCae7mavgTt8-qZMl9jZYMptLRNom2A1ps",
+    authDomain: "fir-test-react.firebaseapp.com",
+    databaseURL: "https://fir-test-react.firebaseio.com",
+    projectId: "fir-test-react",
+    storageBucket: "fir-test-react.appspot.com",
+    messagingSenderId: "142416734148"
   };
